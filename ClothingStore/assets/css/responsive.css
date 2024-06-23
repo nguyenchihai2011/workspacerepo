@@ -1,0 +1,132 @@
+/* PC */
+@media (min-width: 992px) {
+    #head {
+        display: none;
+    }
+
+    .overlay {
+        z-index: 2;
+    }
+
+    .category {
+        z-index: 1;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal {
+        width: 600px;
+    }
+
+    .category {
+        width: calc(18.5vw + (100vw - 720px)/2 + 7.5px);
+        padding-left: calc((100vw - 720px)/2 + 7.5px);
+    }
+
+    .logo {
+        margin-left: calc((100vw - 720px)/2 + 7.5px);
+    }
+
+    .menu-icon {
+        right: calc((100vw - 720px)/2 + 7.5px - 16px);
+    }
+}
+
+/* Mobile - Ngang */
+@media (min-width: 576px) and (max-width: 767px) {
+    .overlay {
+        padding-top: 50px;
+    }
+    
+    .modal {
+        width: 500px;
+    }
+
+    .category {
+        width: 250px;
+        padding-left: calc((100vw - 540px)/2 + 7.5px);
+    }
+
+    .logo {
+        margin-left: calc((100vw - 540px)/2 + 7.5px);
+    }
+
+    .menu-icon {
+        right: calc((100vw - 540px)/2 + 7.5px - 16px);
+    }
+}
+
+/* Mobile - Dung */
+@media (max-width: 576px) {
+    .overlay {
+        padding-top: 50px;
+    }
+    
+    .modal {
+        width: 350px;
+    }
+
+    .category {
+        width: 250px;
+        padding-left: 7.5px;
+    }
+
+    .logo {
+        margin-left: 7.5px;
+    }
+
+    .menu-icon {
+        right: 7.5px;
+    }
+
+    .intro-name {
+        font-size: 3.6rem;
+    }
+
+    .intro-time {
+        display: none;
+    }
+}
+
+
+/* Tablet and Moble */
+@media (max-width:991px) {
+    #head {
+        background-color: #000;
+        color: #fff;
+        position: relative;
+    }
+
+    .category {
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .category-logo {
+        position: relative;
+    }
+
+    .menu-icon {
+        color: #fff;
+        display: block;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+    }
+
+    .category-close-icon {
+        color: #000;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 16px;
+    }
+}

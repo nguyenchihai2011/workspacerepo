@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>Open Education</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AeWGi5fwjYGtwf7dZyVhPcbOkgGti8qD8IZB9Q55kcr0QccNa7wLlkMw2WzODyLcV_jZx3_BhbdfqO5g"></script>
+    <!-- Import Vue.js as a module -->
+    <!-- <script type="module">
+      import Vue from "https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.esm.js";
+    </script> -->
+
+    <!-- Import SignalR Core 6 as a module -->
+    <script type="module">
+      import * as signalR from "https://cdn.jsdelivr.net/npm/@microsoft/signalr@6.0.0/dist/browser/signalr.min.js";
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

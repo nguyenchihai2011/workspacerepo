@@ -1,0 +1,32 @@
+1. toString()
+2. join()
+3. pop() - xoá phần tử cuối mảng và trả về giá trị đó
+4. push() - thêm phần tử vào đầu mảng và trả về độ dài mảng (có thể thêm nhiều phần tử)
+5. shift() - xoá phần tử đầu mảng và trả về giá trị đó 
+6. unshift() - thêm phần tử vào đầu mảng và trả về độ dài mảng (có thể them nhiều phần tử)
+7. splice()
+8. concat()
+9. slice()
+
+
+10. forEach() - sử dụng để duyệt qua từng phần tử của mảng
+11. every() - trả về true nếu các phần tử đúng hết
+12. some() - trả về true nếu có 1 phần tử đúng
+13. find() - tìm phần tử thoả điều kiện và trả về phần tử đó
+14. filter() - tìm tất cả các phần tử thoả điều kiện và trả về các phần tử đó
+15. map() - trả về mảng sau khi thay đổi
+16. reduce() - trả về tổng giá trị của mảng
+
+
+
+
+
+
+
+
+
+
+
+
+
+

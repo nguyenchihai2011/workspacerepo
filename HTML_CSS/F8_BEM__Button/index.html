@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BEM Button</title>
+</head>
+<body>
+    <div id="toast"></div>
+
+    <div>
+        <div onclick="showSuccessToast();" class="btn btn--success">Success</div>
+        <div onclick="showInfoToast();" class="btn btn--info">Info</div>
+        <div onclick="showWarningToast();" class="btn btn--warning">Warning</div>
+    </div>
+
+    <script>
+        function toast({title='', message='', type='success', duration=3000, fade=1}) {
+            const main = document.getElementById('toast');
+            const icons = {
+                success: "fas fa-check-circle",
+                info: "fas fa-info-circle",
+                warning: "fas fa-exclamation-triangle",
+            }
+
+            const icon = icons[type];
+            const delay = (duration/1000).toFixed(2);
+            const hide = fade;
+
+            if(main) {
+                const toast = document.createElement('div');
+
+                //auto Remove
+                const autoRemoveID = setTimeout( function() {
+                    main.removeChild(toast);
+                },duration + hide*1000)
+
+                //click Remove
+                toast.onclick = function (event) {
+                    if (event.target.closest('.toast__close')) {
+                        main.removeChild(toast);
+                        clearTimeout(autoRemoveID);
+                    }
+                }
+
+
+                toast.classList.add('toast', `toast--${type}`);
+                toast.style.animation = `slideInLeft ease 0.5s, fadeOut linear ${hide}s ${delay}s forwards`;
+                toast.innerHTML = ` 
+                    <div class="toast__icon"><i class="${icon}"></i></div>
+                    <div class="toast__content">
+                        <div class="toast__header">${title}</div>
+                        <div class="toast__desc">${message}</div>
+                    </div>
+                    <div class="toast__close"><i class="fas fa-times"></i></div>
+                    `;
+                main.appendChild(toast);
+                
+            }
+        }
+
+        
+
+        function showSuccessToast() {
+            toast({
+                title: 'Success',
+                message: 'Anyone with access can view your invited visitors.',
+                type: 'success',
+                duration: 5000,
+                fade: 1
+            })
+        }
+        function showInfoToast() {
+            toast({
+                title: 'Info',
+                message: 'Anyone with access can view your invited visitors.',
+                type: 'info',
+                duration: 5000,
+                fade: 1
+            })
+        }   
+        function showWarningToast() {
+            toast({
+                title: 'Warning',
+                message: 'Anyone with access can view your invited visitors.',
+                type: 'warning',
+                duration: 5000,
+                fade: 1
+            })
+        }
+    </script>
+</body>
+</html>

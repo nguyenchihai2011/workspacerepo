@@ -1,0 +1,404 @@
+.hide-box {
+    display: none;
+}
+
+.hide-scroll {
+    overflow-y: hidden !important;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    height: 100vh;
+    width: 18.5vw;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 3;
+}
+
+
+.category-logo,
+.logo {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    height: 84px;
+    line-height: 84px;
+} 
+
+.category-close-icon {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.category-menu {
+    padding: 64px 0;
+}
+
+.category-menu-item {
+    list-style: none;
+}
+
+.category-menu-item > a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #757575;
+    display: block;
+    width: 100%;
+    line-height: 27px;
+}
+
+.category-menu-item a:hover,
+.list-item:hover,
+.category-infor-item:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc
+}
+
+.category-menu-icondown {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.list-items {
+    padding: 12px 24px;
+}
+
+.list-item {
+    color: #757575;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    line-height: 22.5px;
+}
+
+.category-infor-item {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    list-style: none;
+    line-height: 22.5px;
+}
+
+
+.home {
+}
+
+.head {
+    height: 84px;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-lable {
+
+}
+
+.head-tool {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.head-tool-item {
+    padding: 10px;
+}
+
+.intro {
+    padding-top: 66.66%;
+    background: url(../img/intro/jeans.jpg) no-repeat top center / cover;
+    color: #fff;
+    padding-left: 38px;
+    position: relative;
+
+
+}
+
+.intro-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px 48px;
+    line-height: 1.5;
+}
+
+.intro-name {
+    font-size: 6.4rem;  
+    font-weight: lighter;
+    letter-spacing: 0.25rem;
+    margin: 10px 0;
+}
+
+.intro-time {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.intro-btn {
+    background-color: #000;
+    font-size: 1.8rem;
+    line-height: 51px;
+    text-align: center;
+    height: 51px;
+    width: 156px;
+}
+
+.intro-btn > a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.intro-btn:hover > a {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.quantity {
+    color: #757575;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product {
+
+}
+
+.product-img {
+    background: url(../img/product/jeans1.jpg) no-repeat top center / cover;
+    padding-top: 120%;
+}
+
+.product-desc {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 15px 0;
+}
+
+.product-desc-name {
+    margin-bottom: 6px;
+    color: #757575;
+}
+
+.product-desc-price {
+
+}
+
+.subcribe {
+    color: #fff;
+    background-color: #000;
+}
+
+.subcribe-container {
+    padding: 32px 16px;
+    font-size: 1.5rem;
+}
+
+.subcribe-title {
+    font-size: 3.6rem;
+    margin: 15px 0;
+}
+
+.subcribe-desc {
+    line-height: 2.5rem;
+    margin: 15px 0;
+}
+
+.subcribe-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.subcribe-button {
+    background-color: #f44336;
+    padding: 8px 16px;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.subcribe-button:hover,
+.infor-contact-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.infor {
+    padding: 68px 16px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+.infor-contact-name,
+.infor-about-name,
+.infor-store-name {
+    font-size: 2rem;
+    padding: 8px 0;
+}
+
+.infor-contact-subname,
+.infor-about-item,
+.store-text {
+    font-size: 1.2rem;
+    padding: 8px 0;
+}
+
+.infor-contact-input,
+.infor-contact-btn {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+.infor-contact-btn {
+    color: #fff;
+    background-color: #000;
+    border: 0;
+}
+
+
+.infor-about-list {
+    list-style: none;
+}
+
+.infor-about-item > a {
+    color: #000;
+}
+
+.infor-store {
+    text-align: left;
+}
+
+.infor-store-detail {
+}
+
+.store-icon {
+    font-size: 1.4rem;
+    padding: 0 2px;
+    display: inline-block;
+}
+
+.store-text {
+    display: inline-block;
+
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-text {
+    padding: 24px 0;
+    display: block;
+}
+
+.footer-link {
+    color: #fff;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay {
+    padding-top: 100px;
+}
+
+.modal {
+    width: 900px;
+    margin: auto;
+    padding: 32px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal-name {
+    font-size: 3rem;
+    margin: 10px 0;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.modal-close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+}
+
+.modal-desc {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: lighter;
+    color: #757575;
+}
+
+.modal-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.modal-button {
+    background-color: #f44336;
+    padding: 12px 24px;
+    border: none;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+

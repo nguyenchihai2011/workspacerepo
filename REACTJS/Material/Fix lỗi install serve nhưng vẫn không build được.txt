@@ -1,0 +1,2 @@
+- Mở powerShell với quyền admin và dán câu lệnh này vào
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned

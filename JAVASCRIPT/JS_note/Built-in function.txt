@@ -1,0 +1,8 @@
+alert
+console.log
+confirm
+prompt
+setTimeout(function() {
+}, miliseconds); //chay func sau 1 khoang thoi gian
+setInterval(function() {
+}, miliseconds); //lap lai func sau 1 khoang thoi gian

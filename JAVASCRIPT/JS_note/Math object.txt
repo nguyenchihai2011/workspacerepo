@@ -1,0 +1,8 @@
+1. Math.PI
+2. Math.round() - làm tròn số
+3. Math.abs() - giá trị tuyệt đối
+4. Math.ceil() - làm tròn trên 
+5. Math.floor() - làm tròn dưới
+6. Math.random() - trả về số thập phân nhỏ hơn 1
+7. Math.min()
+8. Math.max()

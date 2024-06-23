@@ -1,0 +1,11 @@
+1. Dữ liệu nguyên thuỷ
+- Number
+- String 
+- Boolean
+- Undefined
+- Null
+- Symbol
+
+2. Dữ liệu phức tạp
+- Function
+- Object

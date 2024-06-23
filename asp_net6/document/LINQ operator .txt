@@ -1,0 +1,3 @@
+https://dotnettutorials.net/lesson/linq-operators/
+https://www.c-sharpcorner.com/UploadFile/babu_2082/linq-operators-and-lambda-expression-syntax-examples/
+https://viblo.asia/p/linq-trong-c-6J3ZgpgxlmB#_11-mot-so-ham-pho-bien-trong-linq-10

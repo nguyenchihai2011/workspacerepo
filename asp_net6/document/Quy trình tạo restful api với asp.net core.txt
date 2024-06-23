@@ -1,0 +1,22 @@
+1. Tạo project.
+
+2. Tạo models.
+
+3. Tải các Dependency
+	- Microsoft.EntityFrameworkCore
+	- Microsoft.EntityFrameworkCore.Design
+	- Microsoft.EntityFrameworkCore.Tools
+	- Microsoft.EntityFrameworkCore.SqlServer
+	- AutoMapper
+	- AutoMapper.Extensions.Microsoft.DependencyInjection
+
+4. Tạo DbContext, thêm chuỗi connection, thêm DbContext (DbSet, Relationship), thêm services DbContext vào program.cs
+
+5. Add-Migration, Update-Database.
+
+6. Tạo Interface, Repository Pattern, thêm services AddScoped<IRepository, Repository> vào program.cs
+
+7. Tạo DTO (Entities), Tạo MappingProfiles để chuyển đổi dữ liệu giữa Model và DTO vào Helpers.
+
+8. Tạo Controllers.
+

@@ -1,0 +1,9 @@
+DOM Event: 
+	- Sử dụng DOM Event trong trường hợp đơn giản (lắng nghe 1 sự kiện nào đó và 
+	không có nhu cầu gỡ đi)
+Event Listener: 
+	- Sử dụng trong trường hợp thực hiện nhiều công việc khi sự kiện xảy ra (tách ra 
+	thành các function giúp code đỡ rối và tường minh hơn)
+	- Trường hợp đặc biệt hữu ích khi sử dụng Event Listener là khi sự kiện diễn ra và
+	chúng ta muốn huỷ bỏ sự kiện đó trong 1 trường hợp nào đó (có thể loại bỏ cụ thể một 
+	công việc nào đó)

@@ -1,0 +1,27 @@
+.orders-body-image {
+  width: 70px;
+}
+
+.orders-name-product,
+.orders-quantity-product {
+  height: 93px;
+  line-height: 93px;
+}
+
+.orders-body-actions {
+  display: flex;
+}
+
+.orders-body-action {
+  border: none;
+  padding: 6px;
+  margin: 0 4px;
+}
+
+.orders-action-check {
+  color: green;
+}
+
+.orders-action-xmark {
+  color: red;
+}

@@ -1,0 +1,9 @@
+1. length
+2. indexOf() & lastIndexOf() & search() (hỗ trợ tìm theo biểu thức chính quy /JS/g)
+3. slice()
+4. replace()
+5. toUpperCase()
+6. toLowerCase()
+7. trim()
+8. split()
+9. charAt() $ []
